@@ -1,13 +1,24 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Gatsby + Netlify CMS Starter
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](netlifycms.org): https://gatsby-netlify-cms.netlify.com/.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](netlify.com) for continuous deployment, and CDN distribution.
+
+## Getting Started
+
+### Prerequisites
+
+- Node (I recommend using v8.2.0 or higher)
+- Yarn
+- Gatsby CLI
+
+### Run Locally
 ```
-gatsby new gatsby-example-site
+gatsby new [SITE_DIRECTORY_NAME] https://github.com/AustinGreen/gatsby-starter-netlify-cms/
+$ cd [SITE_DIRECTORY_NAME]
+$ gatsby build
+$ gatsby serve
 ```
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Accessing the CMS
+Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting.
